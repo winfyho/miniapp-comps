@@ -1,0 +1,13 @@
+<!--components/common/linkbar/linkbar.wxml-->
+<view class="linkbar" style="background:{{background}}" bind:tap="linkTo">
+
+    <view class="title">
+        {{title}}
+    </view>
+
+    <view class="icon">
+        <image class="icon-img" mode="aspectFit" src="./icon/more.svg" mode="widthFix"></image>
+    </view>
+
+
+</view>

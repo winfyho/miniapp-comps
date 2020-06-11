@@ -1,0 +1,10 @@
+<!--components/common/notify/notify.wxml-->
+<view class="notify" id="notify" hidden="{{!show}}" style="background:{{color}}">
+    <view class="notify-wraper">
+    
+        <view class="title">
+            {{title}}
+        </view>
+        
+    </view>
+</view>

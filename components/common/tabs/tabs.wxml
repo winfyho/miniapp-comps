@@ -1,0 +1,17 @@
+<!--components/common/tabs/tabs.wxml-->
+<view class="tabs">
+    <view class="tabs-wraper">
+        <view 
+            class="tab-item" 
+            style="width:{{width}}"
+            wx:for="{{tabs}}" 
+            bind:tap="changeTab" 
+            data-tab="{{item}}" 
+            wx:key="index">{{item.title}}
+        </view>
+    </view>
+    <view class="tab-slider" style="transform:{{'translateX(' + translateX + '%)'}};width:{{width}}">
+        <view class="tab-slider-inner"></view>
+    </view>
+
+</view>

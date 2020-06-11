@@ -1,0 +1,20 @@
+<!--components/common/popup/popup.wxml-->
+<view class="popup" hidden="{{!show}}">
+
+    <view class="popup-mask" bind:tap="_closePopup" id="popup-mask"></view>
+
+    <view class="popup-wraper" id="popup-wraper">
+
+        <view class="popup-header">
+            <view class="title">标题</view>
+            <view class="close" bind:tap="_closePopup">关闭</view>
+        </view>
+
+        <view class="popup-body">
+
+
+        </view>
+
+    </view>
+
+</view>

@@ -25,4 +25,8 @@
         <wf-icon bind:click="handleIconClick" type="menu"></wf-icon>
         <wf-icon bind:click="handleIconClick" type="plus"></wf-icon>
     </view>
+
+    <view>
+        <wf-loading></wf-loading>
+    </view>
 </view>

@@ -1,0 +1,27 @@
+/* components/common/wf-loading/wf-loading.wxss */
+.wf-loading{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 150rpx;
+    height: 100rpx;
+    padding: 20rpx;
+    background: transparent;
+}
+
+.wf-loading-content{
+    width: 100%;
+    height: 100%;
+}
+
+.wf-loading-spinner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.spinner-item{
+    flex: 0 0 auto;
+    width: 16rpx;
+    height: 16rpx;
+    background: #888;
+    border-radius: 50%;
+}

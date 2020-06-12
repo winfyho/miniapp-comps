@@ -1,6 +1,6 @@
 <!-- index.wxml -->
-<view class="container">
-    <tabs bind:click="handleTabClick"></tabs>
+<view class="container page">
+    <tabs bind:click="handleTabClick" ></tabs>
 
 
     <notify id="notify"></notify>

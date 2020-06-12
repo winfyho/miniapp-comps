@@ -21,12 +21,24 @@ Component({
         tabs: {
             type: Array,
             value: [
-                { index: 0, title: 'tab1' },
-                { index: 1, title: 'tab2' },
-                { index: 2, title: 'tab3' },
-                { index: 3, title: 'tab4' },
+                { index: 0, title: 'tab1',name:"标签" },
+                { index: 1, title: 'tab2',name:"标签" },
+                { index: 2, title: 'tab3',name:"标签" },
+                { index: 3, title: 'tab4',name:"标签" },
             ]
         },
+        background:{
+            type:String,
+            value:"#ffffff"
+        },
+        color:{
+            type:String,
+            value:"#07C160"
+        },
+        sliderWidth:{
+            type:String,
+            value:'50%'
+        }
         
     },
 

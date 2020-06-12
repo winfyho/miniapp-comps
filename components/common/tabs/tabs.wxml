@@ -1,5 +1,5 @@
 <!--components/common/tabs/tabs.wxml-->
-<view class="tabs">
+<view class="tabs" style="background:{{background}}">
     <view class="tabs-wraper">
         <view 
             class="tab-item" 
@@ -10,8 +10,13 @@
             wx:key="index">{{item.title}}
         </view>
     </view>
-    <view class="tab-slider" style="transform:{{'translateX(' + translateX + '%)'}};width:{{width}}">
-        <view class="tab-slider-inner"></view>
+    <view 
+        class="tab-slider" 
+        style="transform:{{'translateX(' + translateX + '%)'}};width:{{width}}">
+        <view 
+            class="tab-slider-inner"
+            style="background:{{color}};width:{{sliderWidth}}"
+            ></view>
     </view>
 
 </view>

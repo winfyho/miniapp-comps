@@ -1,17 +1,5 @@
 // components/common/notify/notify.js
 Component({
-
-    lifetimes: {
-        attached: function () {
-            // 在组件实例进入页面节点树时执行
-            console.log('attach');
-
-
-        },
-        detached: function () {
-            // 在组件实例被从页面节点树移除时执行
-        },
-    },
     properties: {
 
     },

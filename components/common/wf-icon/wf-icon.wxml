@@ -1,0 +1,12 @@
+<!--components/common/wf-icon/wf-icon.wxml-->
+<view 
+    class="wf-icon" 
+    style="width:{{width+'rpx'}};height:{{height+'rpx'}}"
+    bind:tap="handleClick"
+    >
+
+    <image 
+        class="wf-icon-img" 
+        src="./icon/{{type}}.svg" 
+        mode="aspectFit|aspectFill|widthFix"></image>
+</view>

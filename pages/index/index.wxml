@@ -13,4 +13,16 @@
 
     <button bind:tap="showPlugin" data-name="#notify">notify</button>
     <button bind:tap="showPlugin" data-name="#popup">popup</button>
+
+    <view style="background:#ffffff">
+        <wf-icon bind:click="handleIconClick"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="ban"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="close"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="search"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="right"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="left"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="more"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="menu"></wf-icon>
+        <wf-icon bind:click="handleIconClick" type="plus"></wf-icon>
+    </view>
 </view>

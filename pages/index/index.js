@@ -10,6 +10,10 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
+  handleIconClick(e){
+    console.log(e.detail);
+  },
+
   showPlugin(e) {
     const name = e.currentTarget.dataset.name
 

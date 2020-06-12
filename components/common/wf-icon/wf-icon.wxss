@@ -1,0 +1,11 @@
+/* components/common/wf-icon/wf-icon.wxss */
+.wf-icon{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 17rpx;
+    background: transparent;
+}
+.wf-icon-img{
+    width: 100%;
+    height: 100%;
+}

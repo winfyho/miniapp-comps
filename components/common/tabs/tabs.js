@@ -9,10 +9,6 @@ Component({
             this.setData({
                 width
             })
-
-
-            console.log(tabs, width);
-
         },
 
     },

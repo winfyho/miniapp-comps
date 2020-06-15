@@ -29,4 +29,10 @@
     <view>
         <wf-loading></wf-loading>
     </view>
+
+    <number-keyboard 
+        showClose="{{false}}"
+        show="{{false}}"
+        bind:input="keyboardInput" 
+        bind:complete="keyboardComplete"></number-keyboard>
 </view>

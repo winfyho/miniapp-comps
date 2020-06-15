@@ -16,7 +16,9 @@
         "linkbar": "/components/common/linkbar/linkbar",
         "tabs": "/components/common/tabs/tabs",
         "wf-icon": "/components/common/wf-icon/wf-icon",
-        "wf-loading": "/components/common/wf-loading/wf-loading"
+        "wf-loading": "/components/common/wf-loading/wf-loading",
+        "number-keyboard": "/components/common/number-keyboard/number-keyboard"
+
 
 
 

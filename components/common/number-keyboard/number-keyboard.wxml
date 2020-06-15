@@ -1,0 +1,69 @@
+<!--components/common/number-keyboard/number-keyboard.wxml-->
+<view class="number-keyboard" hidden="{{!show}}">
+
+    <view 
+        class="number-keyboard-header" 
+        wx:if="{{showClose}}"
+        bind:tap="closeKeyboard"
+        >
+        <view class="btn-close">
+            <image class="icon" src="./icon/bottom.svg" mode="{{'scaleToFill'}}"></image>
+        </view>
+    </view>
+
+    <view class="input-toast" wx:if="{{showInputToast}}">{{value}}</view>
+
+    <view class="number-keyboard-keys">
+        <view class="key-wraper {{item.key==='0'?'two-key-wraper':''}}" wx:for="{{keys}}" wx:key="index">
+            <view 
+                class="key " 
+                hover-stop-propagation
+                hover-class="key-hover"
+                hover-start-time="0"
+                hover-stay-time="100"
+                data-key="{{item.key}}"
+                bind:tap="handleNumberClick"
+                >{{item.key}}</view>
+        </view>
+    </view>
+
+    <view class="number-keyboard-sidebar">
+        <view class="sidebar-wraper">
+            <view 
+                class="sidebar sidebar-delete"
+                hover-stop-propagation
+                hover-class="key-hover"
+                hover-start-time="0"
+                hover-stay-time="100"
+                bind:tap="_delete"
+                >
+                
+                <image class="icon" src="./icon/delete.svg" mode="aspectFit|aspectFill|widthFix" lazy-load="false"></image>
+            </view>
+        </view>
+
+        <view class="sidebar-wraper">
+            <view 
+                class="sidebar"
+                hover-stop-propagation
+                hover-class="key-hover"
+                hover-start-time="0"
+                hover-stay-time="100"
+                bind:tap="_clear"
+                >清空</view>
+        </view>
+
+        <view class="sidebar-wraper" style="height:270rpx">
+            <view 
+                class="sidebar sidebar-complete"
+                hover-stop-propagation
+                hover-class="sidebar-complete-hover"
+                hover-start-time="0"
+                hover-stay-time="100"
+                bind:tap="complete"
+                >完成</view>
+        </view>
+    </view>
+
+
+</view>

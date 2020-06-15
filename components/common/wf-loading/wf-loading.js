@@ -4,7 +4,7 @@ Component({
     lifetimes: {
         attached: function () {
             // 在组件实例进入页面节点树时执行
-            this.startAnimate(0)
+            // this.startAnimate()
 
         },
         detached: function () {
@@ -30,19 +30,17 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        startAnimate(index) {
-            if(index > 2){
-                index = 0
-            }
-            this.animate(`.spinner-${index}`, [
-                { scale: [1, 1] },
-                { scale: [1.5, 1.5] },
-                { scale: [2.0, 2.0] },
-                { scale: [1.5, 1.5] },
-                { scale: [1, 1] },
-            ], 350, function () {
+        startAnimate() {
+
+            this.animate(`.spinner-item-active`, [
+                { translateX: 0 },
+                { translateX: 25 },
+                { translateX: 40 },
+
+            ], 1000, function () {
+
+                this.startAnimate()
                 
-                this.startAnimate(index + 1)
             }.bind(this))
         }
     }

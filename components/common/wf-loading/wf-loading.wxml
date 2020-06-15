@@ -4,5 +4,6 @@
         <view class="spinner-item spinner-0"></view>
         <view class="spinner-item spinner-1"></view>
         <view class="spinner-item spinner-2"></view>
+        <view class="spinner-item spinner-item-active"></view>
     </view>
 </view>

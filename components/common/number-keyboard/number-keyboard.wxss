@@ -1,0 +1,125 @@
+/* components/common/number-keyboard/number-keyboard.wxss */
+.number-keyboard{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    height: 600rpx;
+    box-sizing: border-box;
+    padding: 20rpx 15rpx;
+    background: #F0F2F4;
+}
+
+.input-toast{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 102;
+    transform: translateX(-50%) translateY(-200%);
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    text-align: left;
+    font-size: 30rpx;
+    max-width: 500rpx;
+    padding: 0 30rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    word-wrap: none;
+}
+
+.number-keyboard-header{
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    width: 100%;
+    height: 60rpx;
+    transform: translateY(-100%);
+    background: #F0F2F4;
+}
+.number-keyboard-header .btn-close{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.number-keyboard-header .btn-close .icon{
+    display: inline-block;
+    width: 120rpx;
+    height: 60rpx;
+}
+.number-keyboard-keys{
+    width: 560rpx;
+    height: 560rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.key-wraper{
+    flex: 0 0 auto;
+    width: 170rpx;
+    height: 130rpx;
+    overflow: hidden;
+    border-radius: 15rpx;
+    background: #fff;
+}
+.two-key-wraper{
+    width: 360rpx;
+}
+.key-wraper .key{
+    width: 100%;
+    height: 100%;
+    line-height: 130rpx;
+    text-align: center;
+    font-size: 38rpx;
+}
+
+
+
+.key-hover{
+    background: #EBEDF0;
+}
+
+.number-keyboard-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150rpx;
+    height: 100%;
+}
+
+.sidebar-wraper{
+    flex: 0 0  auto;
+    width: 100%;
+    height: 130rpx;
+    background: #fff;
+    border-radius: 15rpx;
+    overflow: hidden;
+}
+.sidebar-wraper .sidebar{
+    width: 100%;
+    height: 100%;
+    line-height: 130rpx;
+    text-align: center;
+}
+.sidebar-wraper .sidebar-delete{
+    box-sizing: border-box;
+    padding: 30rpx 40rpx;
+    line-height: 0;
+}
+.sidebar-wraper .sidebar-delete .icon{
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-wraper .sidebar-complete{
+    line-height: 270rpx;
+    color: #fff;
+    background: #1989FA;
+}
+
+.sidebar-wraper .sidebar-complete-hover{
+    background: #0570DB;
+}

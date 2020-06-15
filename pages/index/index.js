@@ -9,6 +9,14 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  keyboardComplete(e){
+    console.log(e.detail);
+    
+  },
+
+  keyboardInput(e){
+    console.log(e.detail.value);
+  },
 
   handleIconClick(e){
     console.log(e.detail);

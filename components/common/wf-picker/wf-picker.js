@@ -49,6 +49,8 @@ Component({
         days: [],
         day: new Date().getDate(),
 
+        show: true
+
 
     },
 
@@ -57,6 +59,8 @@ Component({
      */
     methods: {
         _handleChange(e) {
+            console.log(e.detail);
+
             let config = {
                 '年': 'year',
                 '月': 'month',
@@ -65,7 +69,6 @@ Component({
             let field = config[e.detail.name]
             let data = {}
             data[field] = e.detail.item.value
-            // console.log(e.detail, field, e.detail.item.value);
             this.setData(data)
             this.onChange()
         },
@@ -78,6 +81,14 @@ Component({
                 dateStr: `${year}-${month}-${day}`
             })
 
+        },
+        handleClose() {
+            this.setData({
+                show: false
+            })
+            this.triggerEvent('close', {
+                show: false
+            })
         }
     }
 })

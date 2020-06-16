@@ -7,8 +7,16 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
+    showPicker:false
   },
+  showPicker(){
+    this.setData({
+      showPicker:true
+    })
+  },
+
   keyboardComplete(e){
     console.log(e.detail);
     

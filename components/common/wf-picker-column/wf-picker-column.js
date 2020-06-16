@@ -58,9 +58,11 @@ Component({
                 this._setScrollTop(Math.round(e.detail.scrollTop / 45) * 45)
             }, 100);
         },
-        _setScrollTop(value) {
+        _setScrollTop(value = 0) {
             if (!this.touching && this.timer === null) {
-                let index = value / 45
+                console.log(value);
+
+                let index = value / 45 === 0 ? 0 : value / 45
                 let item = this.data.list[index]
 
                 if (this.trigTimer === null) {

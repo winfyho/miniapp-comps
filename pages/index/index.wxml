@@ -14,6 +14,7 @@
 
 	<button size="mini" bind:tap="showPlugin" data-name="#notify">notify</button>
 	<button size="mini" bind:tap="showPlugin" data-name="#popup">popup</button>
+	<button size="mini" bind:tap="showPicker" data-name="#picker">picker</button>
 
 	<view style="background:#ffffff">
 		<wf-icon bind:click="handleIconClick"></wf-icon>
@@ -43,7 +44,7 @@
 	</dropdown-menu-group> -->
 	<dropdown-menu></dropdown-menu>
 
-	<wf-picker></wf-picker>
+	<wf-picker wx:if="{{showPicker}}"></wf-picker>
 
 
 

@@ -1,6 +1,7 @@
 /* components/common/wf-picker-column/wf-picker-column.wxss */
 .wf-picker-column{
     position: relative;
+    z-index: 3;
     flex: 1 1 auto;
     height: 540rpx;
     background: #fff;

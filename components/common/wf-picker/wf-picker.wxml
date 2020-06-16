@@ -1,7 +1,8 @@
 <!--components/common/wf-picker-view-column/wf-picker-view-column.wxml-->
-<view class="wf-picker">
+<view class="wf-picker" wx:if="{{show}}">
 
-    <wf-picker-column 
+    <view class="wf-picker-wraper">
+        <wf-picker-column 
         class="column" 
         list="{{years}}" 
         name="{{'年'}}"
@@ -22,6 +23,9 @@
         bindchange="_handleChange"  ></wf-picker-column>
 
     <view class="picker-select"></view>
+    </view>
+
+    <view class="wf-mask" bind:tap="handleClose"></view>
 
 </view>
 

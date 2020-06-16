@@ -1,14 +1,15 @@
 // components/common/wf-picker/wf-picker.js
-import { getYears, getMounths } from "./options/date.js"
+import { getYears, getMounths, getDays } from "./options/date.js"
 Component({
 
     lifetimes: {
         attached: function () {
             // 在组件实例进入页面节点树时执行
-            console.log(getYears(2020), getMounths());
+            // console.log(getYears(2020), getMounths(), getDays(2020, 5));
             this.setData({
                 years: getYears(2020),
-                months: getMounths()
+                months: getMounths(),
+                days: getDays()
             })
         },
 
@@ -40,7 +41,14 @@ Component({
             { title: '12月' },
         ],
         years: [],
-        months: []
+        year: new Date().getFullYear(),
+
+        months: [],
+        month: new Date().getMonth() + 1,
+
+        days: [],
+        day: new Date().getDate(),
+
 
     },
 
@@ -48,8 +56,27 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        handleChange(e) {
-            console.log(e.detail);
+        _handleChange(e) {
+            let config = {
+                '年': 'year',
+                '月': 'month',
+                '日': 'day',
+            }
+            let field = config[e.detail.name]
+            let data = {}
+            data[field] = e.detail.item.value
+            // console.log(e.detail, field, e.detail.item.value);
+            this.setData(data)
+            this.onChange()
+        },
+        onChange() {
+            let { year, month, day } = this.data
+            console.log(`${year}-${month}-${day}`);
+
+
+            this.triggerEvent('change', {
+                dateStr: `${year}-${month}-${day}`
+            })
 
         }
     }

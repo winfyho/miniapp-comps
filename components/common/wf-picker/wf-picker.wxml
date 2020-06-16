@@ -1,11 +1,26 @@
 <!--components/common/wf-picker-view-column/wf-picker-view-column.wxml-->
 <view class="wf-picker">
 
-    <wf-picker-column class="column" list="{{years}}" bindchange="handleChange" name="{{'年'}}"></wf-picker-column>
-    <wf-picker-column class="column" list="{{months}}" bindchange="handleChange" name="{{'月份'}}"></wf-picker-column>
-    <wf-picker-column class="column"></wf-picker-column>
+    <wf-picker-column 
+        class="column" 
+        list="{{years}}" 
+        name="{{'年'}}"
+        bindchange="_handleChange" ></wf-picker-column>
 
-    <!-- <view class="picker-mask"></view> -->
+
+    <wf-picker-column 
+        class="column" 
+        list="{{months}}" 
+        name="{{'月'}}"
+        bindchange="_handleChange" ></wf-picker-column>
+
+
+    <wf-picker-column 
+        class="column" 
+        list="{{days}}" 
+        name="{{'日'}}"
+        bindchange="_handleChange"  ></wf-picker-column>
+
     <view class="picker-select"></view>
 
 </view>

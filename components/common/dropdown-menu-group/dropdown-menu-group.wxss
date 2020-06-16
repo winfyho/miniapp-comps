@@ -1,1 +1,6 @@
 /* components/common/dropdown-menu-group/dropdown-menu-group.wxss */
+.dropdown-menu-group{
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+}

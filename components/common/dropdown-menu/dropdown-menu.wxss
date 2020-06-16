@@ -1,26 +1,27 @@
 /* components/common/dropdown-menu/dropdown-menu.wxss */
 .dropdown-menu{
-    display: inline-block;
+    flex: 1 1 auto;
+    display: block;
 }
 .menu-btn{
     position: relative;
     z-index: 2;
     min-width: 187.5rpx;
+    width: 100%;
     height: 100rpx;
     background: #fff;
-    display: inline-flex;
     box-shadow: 0 2px 12px rgba(100, 101, 102, 0.08);
 }
 
 .menu-btn .title{
-    flex: 0 0 auto;
     text-align: center;
-    padding: 0 10rpx 0 30rpx;
     height: 100%;
     line-height: 100rpx;
 }
 .menu-btn .icon{
-    flex: 0 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 60rpx;
     height: 100rpx;
     display: flex;
@@ -31,9 +32,9 @@
 .menu-btn .icon .img{
     width: 0;
     height: 0;
-    border-left: 16rpx solid transparent;
-    border-right: 16rpx solid transparent;
-    border-top: 18rpx solid #bbb;
+    border-left: 12rpx solid transparent;
+    border-right: 12rpx solid transparent;
+    border-top: 15rpx solid #bbb;
     transition: all .3s;
 }
 
@@ -90,7 +91,7 @@
 
 
 .dropdown-menu-active .menu-btn .icon .img{
-    border-top: 18rpx solid red;
+    border-top: 15rpx solid red;
     transform: rotate(180deg);
 }
 

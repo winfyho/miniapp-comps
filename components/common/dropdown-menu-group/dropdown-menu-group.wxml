@@ -1,2 +1,9 @@
 <!--components/common/dropdown-menu-group/dropdown-menu-group.wxml-->
-<text>components/common/dropdown-menu-group/dropdown-menu-group.wxml</text>
+<view class="dropdown-menu-group">
+
+        <slot></slot>
+
+
+</view>
+
+

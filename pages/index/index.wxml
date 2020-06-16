@@ -2,7 +2,7 @@
 <view class="container page">
 	<tabs bind:click="handleTabClick"></tabs>
 
-	 
+
 
 
 	<notify id="notify"></notify>
@@ -10,11 +10,10 @@
 	<popup id="popup"></popup>
 
 	<linkbar bind:linkto="onLinkto" url="{{'/pages/logs/logs'}}" title="{{'跳转首页'}}"></linkbar>
-	<linkbar bind:linkto="onLinkto" url="{{'/pages/logs/logs'}}" title="{{'跳转其他'}}"></linkbar>
 
 
-	<button bind:tap="showPlugin" data-name="#notify">notify</button>
-	<button bind:tap="showPlugin" data-name="#popup">popup</button>
+	<button size="mini" bind:tap="showPlugin" data-name="#notify">notify</button>
+	<button size="mini" bind:tap="showPlugin" data-name="#popup">popup</button>
 
 	<view style="background:#ffffff">
 		<wf-icon bind:click="handleIconClick"></wf-icon>
@@ -28,21 +27,25 @@
 		<wf-icon bind:click="handleIconClick" type="plus"></wf-icon>
 	</view>
 
-	<view>
+	<!-- <view>
 		<wf-loading></wf-loading>
-	</view>
+	</view> -->
 
 	<view style="position:fixed;bottom:0;">
-		<number-keyboard showClose="{{false}}"  show="{{false}}" showInputToast="{{true}}" bind:input="keyboardInput" bind:complete="keyboardComplete"></number-keyboard>
+		<number-keyboard showClose="{{false}}" show="{{false}}" showInputToast="{{true}}" bind:input="keyboardInput" bind:complete="keyboardComplete"></number-keyboard>
 	</view>
 
+	<!-- <dropdown-menu-group>
+		<view>
+			<dropdown-menu></dropdown-menu>
+			<dropdown-menu></dropdown-menu>
+		</view>
+	</dropdown-menu-group> -->
+	<dropdown-menu></dropdown-menu>
 
-		<dropdown-menu></dropdown-menu>
-		<dropdown-menu></dropdown-menu>
-		<dropdown-menu></dropdown-menu>
-		<dropdown-menu></dropdown-menu>
 
 
 
-   
+
+
 </view>

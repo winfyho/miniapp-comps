@@ -19,7 +19,10 @@
         "wf-loading": "/components/common/wf-loading/wf-loading",
         "number-keyboard": "/components/common/number-keyboard/number-keyboard",
         "dropdown-menu": "/components/common/dropdown-menu/dropdown-menu",
-        "dropdown-menu-group": "/components/common/dropdown-menu-group/dropdown-menu-group"
+        "dropdown-menu-group": "/components/common/dropdown-menu-group/dropdown-menu-group",
+        "wf-picker": "/components/common/wf-picker/wf-picker",
+        "wf-picker-column": "/components/common/wf-picker-column/wf-picker-column"
+
 
 
 

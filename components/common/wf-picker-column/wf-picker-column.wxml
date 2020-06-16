@@ -1,0 +1,32 @@
+<!--components/common/wf-picker-column/wf-picker-column.wxml-->
+<scroll-view class="wf-picker-column" 
+    scroll-y
+    scroll-top="{{scrollY}}"
+    bindscroll="_onScroll"
+    >
+
+    <view 
+        class="list"
+        bind:touchstart="_startMove"
+        bind:touchend="_endMove"
+    
+    >
+        <view class="item"></view>
+        <view class="item"></view>
+        <view class="item"></view>
+        <view 
+            class="item" 
+            wx:for="{{list}}" 
+            wx:key="index">{{item.title}}
+        </view>
+
+        <view class="item"></view>
+        <view class="item"></view>
+    </view>
+
+
+
+
+
+    
+</scroll-view>

@@ -20,7 +20,7 @@
                 hover-stop-propagation
                 hover-class="key-hover"
                 hover-start-time="0"
-                hover-stay-time="100"
+                hover-stay-time="65"
                 data-key="{{item.key}}"
                 bind:tap="handleNumberClick"
                 >{{item.key}}</view>
@@ -34,7 +34,7 @@
                 hover-stop-propagation
                 hover-class="key-hover"
                 hover-start-time="0"
-                hover-stay-time="100"
+                hover-stay-time="65"
                 bind:tap="_delete"
                 >
                 
@@ -48,7 +48,7 @@
                 hover-stop-propagation
                 hover-class="key-hover"
                 hover-start-time="0"
-                hover-stay-time="100"
+                hover-stay-time="65"
                 bind:tap="_clear"
                 >清空</view>
         </view>
@@ -59,7 +59,7 @@
                 hover-stop-propagation
                 hover-class="sidebar-complete-hover"
                 hover-start-time="0"
-                hover-stay-time="100"
+                hover-stay-time="65"
                 bind:tap="complete"
                 >完成</view>
         </view>

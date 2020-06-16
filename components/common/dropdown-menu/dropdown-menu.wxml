@@ -1,0 +1,50 @@
+<!--components/common/dropdown-menu/dropdown-menu.wxml-->
+
+<view class="dropdown-menu {{active === true ? 'dropdown-menu-active':''}}">
+
+    <view class="menu-btn" bind:tap="handleDrop">
+
+        <view 
+            class="title"
+            style="color:{{active ? color : '#444444'}}"
+        >{{title}}</view>
+
+        <view class="icon">
+            <view 
+                class="img"
+                style="    border-top-color:{{active ? color : '#bbb'}}"
+            ></view>
+        </view>
+
+    </view>
+
+
+    <view 
+        class="menu-body {{active === true ? 'menu-body-active':''}}" >
+
+        <view class="menu-body-mask" id="menu-body-mask"></view>
+
+        <view class="menu-body-wraper" id="menu-body-wraper">
+
+            <view class="menu-list">
+                <view 
+                    class="menu-item {{curIndex === item.index ? 'menu-item-active' : ''}}"
+                    style="color:{{curIndex === item.index ? color : '#444444'}}" 
+                    wx:for="{{list}}" 
+                    wx:key="index"
+                    data-item="{{item}}"
+                    bind:tap="handleItemClick"
+                    >
+
+                    {{item.title}}
+                </view>
+
+            </view>
+
+
+        </view>
+
+    </view>
+
+
+</view>

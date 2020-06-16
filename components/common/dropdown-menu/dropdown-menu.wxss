@@ -1,0 +1,103 @@
+/* components/common/dropdown-menu/dropdown-menu.wxss */
+.dropdown-menu{
+    display: inline-block;
+}
+.menu-btn{
+    position: relative;
+    z-index: 2;
+    min-width: 187.5rpx;
+    height: 100rpx;
+    background: #fff;
+    display: inline-flex;
+    box-shadow: 0 2px 12px rgba(100, 101, 102, 0.08);
+}
+
+.menu-btn .title{
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 0 10rpx 0 30rpx;
+    height: 100%;
+    line-height: 100rpx;
+}
+.menu-btn .icon{
+    flex: 0 0 auto;
+    width: 60rpx;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.menu-btn .icon .img{
+    width: 0;
+    height: 0;
+    border-left: 16rpx solid transparent;
+    border-right: 16rpx solid transparent;
+    border-top: 18rpx solid #bbb;
+    transition: all .3s;
+}
+
+.menu-body{
+    position: absolute;
+    width: 750rpx;
+}
+
+.menu-body-mask{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.menu-body-wraper{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    background: #fff;
+    transition: all .3s;
+    transform: translateY(-100%);
+    visibility: hidden;
+}
+
+.menu-list{
+    width: 100%;
+}
+.menu-list .menu-item{
+    padding: 0 30rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    color: #444;
+    font-size: 28rpx;
+    border-bottom: 1rpx solid #f5f5f5;
+}
+
+/* click item */
+.menu-list .menu-item-active{
+    /* color: #f00; */
+    background: #f5f5f5;
+}
+
+/* active */
+
+
+.dropdown-menu-active .menu-btn .icon .img{
+    border-top: 18rpx solid red;
+    transform: rotate(180deg);
+}
+
+.menu-body-active .menu-body-mask{
+    opacity: 1;
+}
+.menu-body-active .menu-body-wraper{
+    visibility:visible;
+    transform: translateY(0);
+}

@@ -1,6 +1,6 @@
 /* components/common/number-keyboard/number-keyboard.wxss */
 .number-keyboard{
-    position: fixed;
+    position: relative;
     z-index: 100;
     display: flex;
     justify-content: space-between;

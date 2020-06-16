@@ -7,3 +7,7 @@
 ## linkbar 跳转bar
 
 ## tabs 标签页
+
+## wf-icon 基础图标
+
+## number-keyboard 数字键盘

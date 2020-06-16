@@ -1,38 +1,48 @@
 <!-- index.wxml -->
 <view class="container page">
-    <tabs bind:click="handleTabClick" ></tabs>
+	<tabs bind:click="handleTabClick"></tabs>
+
+	 
 
 
-    <notify id="notify"></notify>
+	<notify id="notify"></notify>
 
-    <popup id="popup"></popup>
+	<popup id="popup"></popup>
 
-    <linkbar bind:linkto="onLinkto" url="{{'/pages/logs/logs'}}" title="{{'跳转首页'}}"></linkbar>
-    <linkbar bind:linkto="onLinkto" url="{{'/pages/logs/logs'}}" title="{{'跳转其他'}}"></linkbar>
+	<linkbar bind:linkto="onLinkto" url="{{'/pages/logs/logs'}}" title="{{'跳转首页'}}"></linkbar>
+	<linkbar bind:linkto="onLinkto" url="{{'/pages/logs/logs'}}" title="{{'跳转其他'}}"></linkbar>
 
 
-    <button bind:tap="showPlugin" data-name="#notify">notify</button>
-    <button bind:tap="showPlugin" data-name="#popup">popup</button>
+	<button bind:tap="showPlugin" data-name="#notify">notify</button>
+	<button bind:tap="showPlugin" data-name="#popup">popup</button>
 
-    <view style="background:#ffffff">
-        <wf-icon bind:click="handleIconClick"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="ban"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="close"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="search"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="right"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="left"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="more"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="menu"></wf-icon>
-        <wf-icon bind:click="handleIconClick" type="plus"></wf-icon>
-    </view>
+	<view style="background:#ffffff">
+		<wf-icon bind:click="handleIconClick"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="ban"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="close"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="search"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="right"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="left"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="more"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="menu"></wf-icon>
+		<wf-icon bind:click="handleIconClick" type="plus"></wf-icon>
+	</view>
 
-    <view>
-        <wf-loading></wf-loading>
-    </view>
+	<view>
+		<wf-loading></wf-loading>
+	</view>
 
-    <number-keyboard 
-        showClose="{{false}}"
-        show="{{false}}"
-        bind:input="keyboardInput" 
-        bind:complete="keyboardComplete"></number-keyboard>
+	<view style="position:fixed;bottom:0;">
+		<number-keyboard showClose="{{false}}"  show="{{false}}" showInputToast="{{true}}" bind:input="keyboardInput" bind:complete="keyboardComplete"></number-keyboard>
+	</view>
+
+
+		<dropdown-menu></dropdown-menu>
+		<dropdown-menu></dropdown-menu>
+		<dropdown-menu></dropdown-menu>
+		<dropdown-menu></dropdown-menu>
+
+
+
+   
 </view>

@@ -1,7 +1,8 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/about/about"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -21,14 +22,8 @@
         "dropdown-menu": "/components/common/dropdown-menu/dropdown-menu",
         "dropdown-menu-group": "/components/common/dropdown-menu-group/dropdown-menu-group",
         "wf-picker": "/components/common/wf-picker/wf-picker",
-        "wf-picker-column": "/components/common/wf-picker-column/wf-picker-column"
-
-
-
-
-
-
-
-
+        "wf-picker-column": "/components/common/wf-picker-column/wf-picker-column",
+        "tree-select": "/components/common/tree-select/tree-select",
+        "sidebar": "/components/common/sidebar/sidebar"
     }
 }

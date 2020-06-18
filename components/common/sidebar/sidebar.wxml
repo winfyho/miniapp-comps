@@ -1,0 +1,16 @@
+<!--components/common/sidebar/sidebar.wxml-->
+<view class="sidebar">
+
+    <view 
+        class="sidebar-item {{current===index?'sidebar-item-active':''}}" 
+        wx:for="{{list}}" 
+        wx:key="index"
+        data-item="{{item}}"
+        bind:tap="handleChange"
+        >
+        <view class="icon"></view>
+        <view class="title">{{item.title}}</view>
+    </view>
+
+
+</view>

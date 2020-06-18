@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class="page">
+
+<tree-select></tree-select>
+
+
+</view>

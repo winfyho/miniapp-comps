@@ -1,0 +1,34 @@
+/* components/common/sidebar/sidebar.wxss */
+.sidebar{
+    width: 100%;
+    background: transparent;
+}
+
+.sidebar-item{
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    /* background: #F7F8FA; */
+    margin-bottom: 1rpx;
+}
+.sidebar-item .icon{
+    flex: 0 0 auto;
+    background: transparent;
+    width: 16rpx;
+    height: 100%;
+}
+.sidebar-item .title{
+    flex: 1 1 auto;
+    text-align: center;
+    height: 100%;
+    line-height: 100rpx;
+}
+
+/* active */
+.sidebar-item-active .icon{
+    background: #f00;
+}
+
+.sidebar-item-active{
+    background: #fff;
+}

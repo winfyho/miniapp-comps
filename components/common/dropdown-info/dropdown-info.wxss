@@ -1,0 +1,35 @@
+/* components/common/dropdown-info/dropdown-info.wxss */
+.dropdown-info{
+    position: relative;
+    width: 750rpx;
+    background: #fff;
+}
+
+.dropdown-info .header{
+    padding: 0 30rpx;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1rpx solid #eee;
+    background: #fff;
+}
+.dropdown-info .header .title{
+    flex: 1 1 auto;
+}
+.dropdown-info .header .icon{
+    width: 30rpx;
+    height: 30rpx;
+    transform: rotate(90deg);
+    transition: all .3s;
+}
+.dropdown-info .header .icon-active{
+
+    transform: rotate(-90deg);
+}
+
+.dropdown-info .info{
+    padding: 20rpx 30rpx;
+    padding-bottom: 20rpx;
+    background: #f5f5f5;
+}

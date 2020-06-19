@@ -27,7 +27,9 @@
         "tree-select": "/components/common/tree-select/tree-select",
         "sidebar": "/components/common/sidebar/sidebar",
         "wf-form": "/components/common/wf-form/wf-form",
-        "wf-form-item": "/components/common/wf-form-item/wf-form-item"
+        "wf-form-item": "/components/common/wf-form-item/wf-form-item",
+        "dropdown-info": "/components/common/dropdown-info/dropdown-info"
+
 
     }
 }

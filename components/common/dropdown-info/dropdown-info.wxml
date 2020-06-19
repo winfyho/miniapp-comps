@@ -1,0 +1,10 @@
+<!--components/common/dropdown-info/dropdown-info.wxml-->
+<view class="dropdown-info">
+    <view class="header" bind:tap="switchShow">
+        <view class="title">{{title}}</view>
+        <image class="icon {{show ? 'icon-active' : ''}}" src="./icon/right.svg" mode="aspectFit|aspectFill|widthFix"></image>
+    </view>
+    <view class="info" hidden="{{!show}}">
+        <view class="content">{{info}}</view>
+    </view>
+</view>

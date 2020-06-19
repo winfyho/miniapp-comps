@@ -46,6 +46,8 @@
 
 	<wf-picker wx:if="{{showPicker}}"></wf-picker>
 
+	<dropdown-info></dropdown-info>
+
 
 
 

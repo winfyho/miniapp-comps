@@ -1,0 +1,6 @@
+<!--pages/admin/admin.wxml-->
+<view class="page">
+    <wf-form></wf-form>
+
+
+</view>

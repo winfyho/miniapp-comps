@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/logs/logs",
-        "pages/about/about"
+        "pages/about/about",
+        "pages/admin/admin"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -24,6 +25,9 @@
         "wf-picker": "/components/common/wf-picker/wf-picker",
         "wf-picker-column": "/components/common/wf-picker-column/wf-picker-column",
         "tree-select": "/components/common/tree-select/tree-select",
-        "sidebar": "/components/common/sidebar/sidebar"
+        "sidebar": "/components/common/sidebar/sidebar",
+        "wf-form": "/components/common/wf-form/wf-form",
+        "wf-form-item": "/components/common/wf-form-item/wf-form-item"
+
     }
 }

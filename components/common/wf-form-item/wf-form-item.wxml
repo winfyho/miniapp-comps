@@ -1,0 +1,17 @@
+<!--components/common/wf-form-item/wf-form-item.wxml-->
+<view class="wf-form-item">
+
+    <view class="title">{{option.title}}</view>
+
+    <view class="value">
+        <input 
+            class="input"
+            value="" 
+            type="text|number|idcard|digit|time|date"  
+            placeholder="{{option.placeholder}}"
+            maxlength="140"  bindinput="handleInput" >
+            
+        </input>
+          
+    </view>
+</view>

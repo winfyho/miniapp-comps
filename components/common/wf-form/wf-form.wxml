@@ -1,0 +1,11 @@
+<!--components/common/wf-form/wf-form.wxml-->
+<view class="wf-form">
+    <wf-form-item bindinput="handleInput" option="{{option.title}}"></wf-form-item>
+    <wf-form-item bindinput="handleInput" option="{{option.price}}"></wf-form-item>
+    <wf-form-item bindinput="handleInput" option="{{option.des}}"></wf-form-item>
+
+    <view class="submit">
+        <button class="btn-submit" size="mini" type="primary" bind:tap="handleSubmit">提交</button>
+    </view>
+
+</view>
